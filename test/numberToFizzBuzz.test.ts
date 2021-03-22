@@ -19,4 +19,12 @@ describe("Number to FizzBuzz", () => {
 
     expect(result).toBe(expected);
   });
+
+  it("la función fizzbuzz devuelve 100 valores", () => {
+    expect(fizzbuzz()).toHaveLength(100);
+  });
 });
+
+function fizzbuzz(): any {
+  return Array(100);
+}
