@@ -6,6 +6,7 @@ describe("Number to FizzBuzz", () => {
     [2, 2],
     [4, 4],
     [3, "Fizz"],
+    [6, "Fizz"],
   ])("para el número %d devuelve %s", (value, expected) => {
     const result = numberToFizzBuzz(value);
 
