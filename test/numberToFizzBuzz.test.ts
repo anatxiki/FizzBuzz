@@ -6,4 +6,10 @@ describe("Number to FizzBuzz", () => {
 
     expect(result).toBe(1);
   });
+
+  it("para el número 2 devuelve 2", () => {
+    const result = numberToFizzBuzz(2);
+
+    expect(result).toBe(2);
+  });
 });
