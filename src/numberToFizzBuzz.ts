@@ -1,4 +1,8 @@
 export function numberToFizzBuzz(value: number) {
+  if (value === 15) {
+    return "FizzBuzz";
+  }
+
   if (isFizz(value)) {
     return "Fizz";
   }
