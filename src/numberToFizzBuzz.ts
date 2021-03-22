@@ -1,5 +1,5 @@
-export function numberToFizzBuzz(arg0: number) {
-  if (arg0 === 2) {
+export function numberToFizzBuzz(value: number) {
+  if (value === 2) {
     return 2;
   }
 
