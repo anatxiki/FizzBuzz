@@ -1,13 +1,5 @@
 export function numberToFizzBuzz(value: number) {
-  if (value === 15) {
-    return "FizzBuzz";
-  }
-
-  if (value === 30) {
-    return "FizzBuzz";
-  }
-
-  if (value === 45) {
+  if (value % 5 === 0 && value % 3 === 0) {
     return "FizzBuzz";
   }
 
