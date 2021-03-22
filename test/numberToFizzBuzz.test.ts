@@ -12,4 +12,10 @@ describe("Number to FizzBuzz", () => {
 
     expect(result).toBe(2);
   });
+
+  it("para el número 4 devuelve 4", () => {
+    const result = numberToFizzBuzz(4);
+
+    expect(result).toBe(4);
+  });
 });
