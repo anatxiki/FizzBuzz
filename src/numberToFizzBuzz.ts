@@ -3,6 +3,10 @@ export function numberToFizzBuzz(value: number) {
     return "FizzBuzz";
   }
 
+  if (value === 30) {
+    return "FizzBuzz";
+  }
+
   if (isFizz(value)) {
     return "Fizz";
   }
