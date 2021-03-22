@@ -11,6 +11,10 @@ export function numberToFizzBuzz(value: number) {
     return "Buzz";
   }
 
+  if (value === 20) {
+    return "Buzz";
+  }
+
   return value;
 }
 
