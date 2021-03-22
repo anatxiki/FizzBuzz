@@ -3,7 +3,7 @@ export function numberToFizzBuzz(value: number) {
     return "Fizz";
   }
 
-  if (value % 5 === 0) {
+  if (isBuzz(value)) {
     return "Buzz";
   }
 
@@ -12,4 +12,8 @@ export function numberToFizzBuzz(value: number) {
 
 function isFizz(value: number) {
   return value % 3 === 0;
+}
+
+function isBuzz(value: number) {
+  return value % 5 === 0;
 }
