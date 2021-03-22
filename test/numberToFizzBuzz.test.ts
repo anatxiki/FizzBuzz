@@ -1,4 +1,4 @@
-import { numberToFizzBuzz } from "../src/numberToFizzBuzz";
+import { numberToFizzBuzz, fizzbuzz } from "../src/numberToFizzBuzz";
 
 describe("Number to FizzBuzz", () => {
   it.each([
@@ -24,7 +24,3 @@ describe("Number to FizzBuzz", () => {
     expect(fizzbuzz()).toHaveLength(100);
   });
 });
-
-function fizzbuzz(): any {
-  return Array(100);
-}
