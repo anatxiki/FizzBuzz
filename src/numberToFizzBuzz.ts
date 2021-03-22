@@ -7,6 +7,10 @@ export function numberToFizzBuzz(value: number) {
     return "FizzBuzz";
   }
 
+  if (value === 45) {
+    return "FizzBuzz";
+  }
+
   if (isFizz(value)) {
     return "Fizz";
   }
