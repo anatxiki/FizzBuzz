@@ -18,4 +18,10 @@ describe("Number to FizzBuzz", () => {
 
     expect(result).toBe(4);
   });
+
+  it("para el número 3 devuelve Fizz", () => {
+    const result = numberToFizzBuzz(3);
+
+    expect(result).toBe("Fizz");
+  });
 });
