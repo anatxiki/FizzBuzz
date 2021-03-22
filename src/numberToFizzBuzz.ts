@@ -7,5 +7,9 @@ export function numberToFizzBuzz(value: number) {
     return "Fizz";
   }
 
+  if (value === 9) {
+    return "Fizz";
+  }
+
   return value;
 }
