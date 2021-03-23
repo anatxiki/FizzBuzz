@@ -16,4 +16,12 @@ describe("FizzBuzz", () => {
 
     expect(console.log).toHaveBeenNthCalledWith(2, 2);
   });
+
+  it("pinta el resultado de FizzBuzz para 3", () => {
+    jest.spyOn(console, "log");
+
+    fizzBuzz();
+
+    expect(console.log).toHaveBeenNthCalledWith(3, "Fizz");
+  });
 });
