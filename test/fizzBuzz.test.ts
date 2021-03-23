@@ -7,7 +7,7 @@ describe("FizzBuzz", () => {
     [3, "Fizz"],
     [100, "Buzz"],
   ])("pinta el resultado de FizzBuzz para %d", (value, expected) => {
-    jest.spyOn(console, "log");
+    jest.spyOn(console, "log").mockReturnValue();
 
     fizzBuzz();
 
