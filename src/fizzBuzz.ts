@@ -1,5 +1,7 @@
+import { numberToFizzBuzz } from "./numberToFizzBuzz";
+
 export function fizzBuzz() {
-  console.log(1);
-  console.log(2);
-  console.log("Fizz");
+  for (let i = 1; i <= 3; i++) {
+    console.log(numberToFizzBuzz(i));
+  }
 }
