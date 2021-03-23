@@ -1,4 +1,4 @@
-import { numberToFizzBuzz, fizzbuzz } from "../src/numberToFizzBuzz";
+import { numberToFizzBuzz } from "../src/numberToFizzBuzz";
 
 describe("Number to FizzBuzz", () => {
   it.each([
@@ -18,9 +18,5 @@ describe("Number to FizzBuzz", () => {
     const result = numberToFizzBuzz(value);
 
     expect(result).toBe(expected);
-  });
-
-  it("la función fizzbuzz devuelve 100 valores", () => {
-    expect(fizzbuzz()).toHaveLength(100);
   });
 });

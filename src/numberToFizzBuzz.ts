@@ -1,7 +1,3 @@
-export function fizzbuzz(): any {
-  return Array(100);
-}
-
 export function numberToFizzBuzz(value: number) {
   if (isFizzBuzz(value)) {
     return "FizzBuzz";
