@@ -1,35 +1,16 @@
 import { fizzBuzz } from "../src/fizzBuzz";
 
 describe("FizzBuzz", () => {
-  it("pinta el resultado de FizzBuzz para 1", () => {
+  it.each([
+    [1, 1],
+    [2, 2],
+    [3, "Fizz"],
+    [100, "Buzz"],
+  ])("pinta el resultado de FizzBuzz para %d", (value, expected) => {
     jest.spyOn(console, "log");
 
     fizzBuzz();
 
-    expect(console.log).toHaveBeenCalledWith(1);
-  });
-
-  it("pinta el resultado de FizzBuzz para 2", () => {
-    jest.spyOn(console, "log");
-
-    fizzBuzz();
-
-    expect(console.log).toHaveBeenNthCalledWith(2, 2);
-  });
-
-  it("pinta el resultado de FizzBuzz para 3", () => {
-    jest.spyOn(console, "log");
-
-    fizzBuzz();
-
-    expect(console.log).toHaveBeenNthCalledWith(3, "Fizz");
-  });
-
-  it("pinta el resultado de FizzBuzz para 100", () => {
-    jest.spyOn(console, "log");
-
-    fizzBuzz();
-
-    expect(console.log).toHaveBeenNthCalledWith(100, "Buzz");
+    expect(console.log).toHaveBeenNthCalledWith(value, expected);
   });
 });
